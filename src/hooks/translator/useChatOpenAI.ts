@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import { HumanMessage, SystemMessage } from '@langchain/core/messages';
-import { ChatPromptTemplate } from '@langchain/core/prompts';
-import { ChatOpenAI } from '@langchain/openai';
+import { useState } from "react";
+import { HumanMessage, SystemMessage } from "@langchain/core/messages";
+import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatOpenAI } from "@langchain/openai";
 
-import { CONFIG } from '../constant/config';
-import type { Language } from '../types/translator';
+import { CONFIG } from "../../constant/config";
+import type { Language } from "../../types/translator";
 
 const model = new ChatOpenAI({
   model: "gpt-3.5-turbo",
@@ -26,10 +26,10 @@ export const useChatOpenAI = ({ language }: { language: Language }) => {
     const messages = [
       new SystemMessage(SYSTEM_MSG),
       new HumanMessage(humanMessage),
-    ]
+    ];
     const chatPromptValue = await model.invoke(messages);
     return chatPromptValue;
-  }
+  };
 
   const fetchTranslatedStream = async (humanMessage: string) => {
     setStream("");
@@ -52,4 +52,4 @@ export const useChatOpenAI = ({ language }: { language: Language }) => {
     fetchTranslatedStream,
     fetchSingleMessage,
   };
-}
+};

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { useChatOpenAI } from "./useChatOpenAI";
-import { Language } from "../types/translator";
+import { Language } from "../../types/translator";
 
 export const useTranslator = () => {
   const [input, setInput] = useState<string>("");
@@ -23,7 +23,7 @@ export const useTranslator = () => {
 
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setLanguage(e.target.value as unknown as Language);
-  }
+  };
 
   return {
     input,
@@ -34,4 +34,4 @@ export const useTranslator = () => {
     handleInputChange,
     handleLanguageChange,
   };
-} 
+};

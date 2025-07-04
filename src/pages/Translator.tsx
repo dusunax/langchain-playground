@@ -1,4 +1,4 @@
-import { useTranslator } from "../hooks/useTranslator";
+import { useTranslator } from "../hooks/translator/useTranslator";
 import { LanguageIcon } from "../types/translator";
 
 export default function Translator() {
@@ -58,7 +58,9 @@ export default function Translator() {
           <h3 style={{ height: "40px", overflow: "auto" }}>
             {lastHumanMessage}
           </h3>
-          <h2>Result in {LanguageIcon[language]}</h2>
+          <h2>
+            Result in {LanguageIcon[language as keyof typeof LanguageIcon]}
+          </h2>
           <h3 style={{ height: "40px", overflow: "auto" }}>{stream}</h3>
         </aside>
 
