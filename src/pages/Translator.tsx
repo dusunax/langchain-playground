@@ -14,6 +14,7 @@ export default function Translator() {
 
   return (
     <>
+      <h1>Translator</h1>
       <select
         onChange={handleLanguageChange}
         style={{
