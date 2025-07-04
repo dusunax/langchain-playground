@@ -1,4 +1,7 @@
-export default function Layout({ children }: { children: React.ReactNode }) {
+import { Outlet } from "react-router-dom";
+import Header from "./components/partials/Header";
+
+export default function Layout() {
   return (
     <div
       style={{
@@ -10,11 +13,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         background: "#f5f5f5",
       }}
     >
-      <header style={{ padding: "4rem 0 2rem" }}>
-        <h2 style={{ margin: "0" }}>LangChain Translator</h2>
-      </header>
-
-      {children}
+      <Header />
+      <Outlet />
     </div>
   );
 }

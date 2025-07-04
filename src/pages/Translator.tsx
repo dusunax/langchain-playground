@@ -51,7 +51,7 @@ export default function Translator() {
             margin: 0,
             boxSizing: "border-box",
             background: "white",
-            maxWidth: "800px",
+            maxWidth: "var(--width-content)",
           }}
         >
           <h2>Input</h2>
@@ -66,13 +66,16 @@ export default function Translator() {
           onSubmit={handleSubmit}
           style={{
             width: "100%",
-            maxWidth: "800px",
+            maxWidth: "var(--width-content)",
             boxSizing: "border-box",
             background: "white",
           }}
         >
           <input
             type="text"
+            style={{
+              maxWidth: "var(--width-content)",
+            }}
             value={input}
             onChange={handleInputChange}
             placeholder="Enter text to translate"
