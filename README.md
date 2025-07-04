@@ -1,11 +1,18 @@
-# LangChain Translator
+# LangChain Playground
+
+## 🦜 Playground
+- Translator
+- Sentiment Analysis
+
+<img src="https://github.com/user-attachments/assets/0920c56c-f22a-4831-9c52-79cca363ec47" width="450"/>
+<img src="https://github.com/user-attachments/assets/e549ad0e-b692-4804-9216-a8fb45ebc041" width="450"/>
 
 ## 📦 Installation
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/dusunax/langchain-translator.git
-cd langchain-translator
+git clone https://github.com/dusunax/langchain-playground.git
+cd langchain-playground
 ```
 
 ### 2. Install dependencies:
