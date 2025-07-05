@@ -1,3 +1,4 @@
+import ContentsArea from "../components/ContentsArea";
 import { useTranslator } from "../hooks/translator/useTranslator";
 import { LanguageIcon } from "../types/translator";
 
@@ -13,7 +14,7 @@ export default function Translator() {
   } = useTranslator();
 
   return (
-    <>
+    <ContentsArea>
       <h1>Translator</h1>
       <select
         onChange={handleLanguageChange}
@@ -89,6 +90,6 @@ export default function Translator() {
           </button>
         </form>
       </section>
-    </>
+    </ContentsArea>
   );
 }
