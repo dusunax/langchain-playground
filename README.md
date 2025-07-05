@@ -3,9 +3,12 @@
 ## 🦜 Playground
 - Translator
 - Sentiment Analysis
+- Few Shots
 
-<img src="https://github.com/user-attachments/assets/0920c56c-f22a-4831-9c52-79cca363ec47" width="450"/>
+<img src="https://github.com/user-attachments/assets/7e1cdda3-cb2c-4c50-8d72-988b86ec8116" width="650"/>
 <img src="https://github.com/user-attachments/assets/e549ad0e-b692-4804-9216-a8fb45ebc041" width="450"/>
+<img src="https://github.com/user-attachments/assets/0920c56c-f22a-4831-9c52-79cca363ec47" width="450"/>
+
 
 ## 📦 Installation
 
