@@ -24,8 +24,9 @@ const Header = () => {
         width: "100%",
         padding: "4rem 0 2rem",
         display: "flex",
-        alignItems: "center",
+        alignItems: "flex-start",
         justifyContent: "space-between",
+        gap: "1rem",
       }}
     >
       <h2 style={{ margin: "0" }}>LangChain</h2>
@@ -36,6 +37,8 @@ const Header = () => {
           margin: "0",
           display: "flex",
           gap: "1rem",
+          flexWrap: "wrap",
+          justifyContent: "flex-end",
         }}
       >
         <Link
@@ -51,6 +54,13 @@ const Header = () => {
           title="😂"
         >
           Sentiment Analysis
+        </Link>
+        <Link
+          to="/few-shots"
+          style={linkStyle(pathname === "/few-shots")}
+          title="🔫🔫"
+        >
+          Few Shots
         </Link>
       </ul>
     </header>

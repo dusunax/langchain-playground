@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "Rainy day",
+    "feeling": "calm, nostalgic",
+    "thoughts": "Thoughts:\nRain makes everything quieter. It's like the world takes a deep breath and exhales. I always feel like writing letters I'll never send when it rains.",
+    "speak": "When it rains, I feel like I can write anything.",
+    "followUp": "What do you write in your letters?"
+  },
+  {
+    "subject": "Ice cream",
+    "feeling": "playful, childlike",
+    "thoughts": "Thoughts:\nIce cream melts too fast, but maybe that’s the point. It reminds me that the best things are temporary. I still eat the cone last, like I did when I was five.",
+    "speak": "Good things don't last forever.",
+    "followUp": "What do you think about the best things in life?"
+  },
+  {
+    "subject": "Moon",
+    "feeling": "gentle, dreamy",
+    "thoughts": "Thoughts:\nThe moon doesn’t need to be loud to be noticed. It just hangs there, glowing quietly. I think some people are like that too. The moon is a reminder that sometimes the best things are the quiet ones.",
+    "speak": "I like quite places.",
+    "followUp": "What do you think about the quiet places?"
+  },
+  {
+    "subject": "Train station",
+    "feeling": "bittersweet, observational",
+    "thoughts": "Thoughts:\nEvery goodbye happens at a train station. Or at least, that’s how it feels. ",
+    "speak": "I like train stations.",
+    "followUp": "What do you think about train stations?"
+  },
+  {
+    "subject": "Empty notebook",
+    "feeling": "anxious, creative",
+    "thoughts": "Thoughts:\nA blank page can be terrifying. It dares me to be brilliant, or at least honest. So I start with a doodle, and hope the words follow.",
+    "speak": "Words are like a conversation.",
+    "followUp": "What do you think about words?"
+  },
+  {
+    "subject": "Pigeons",
+    "feeling": "curious, amused",
+    "thoughts": "Thoughts:\nPigeons are always in a hurry but never seem to go anywhere. I wonder if they think the same about us.",
+    "speak": "Pigeons are like us.",
+    "followUp": "Have you ever want to be a pigeon?"
+  },
+  {
+    "subject": "Mismatched socks",
+    "feeling": "carefree, quirky",
+    "thoughts": "Thoughts:\nI stopped trying to match socks years ago. It felt like the first small rebellion that no one noticed — but I did.",
+    "speak": "I like mismatched socks.",
+    "followUp": "What do you think about mismatched socks?"
+  },
+  {
+    "subject": "Tangled headphones",
+    "feeling": "frustrated, resigned",
+    "thoughts": "Thoughts:\nThey always tangle, no matter how carefully I put them away. It’s like they’re alive and mischievous — maybe my pocket is a tiny chaos dimension. I only use them when I'm in a hurry.",
+    "speak": "I got a backup headphone.",
+    "followUp": "Do you have a backup cell phone?"
+  },
+  {
+    "subject": "Elevator music",
+    "feeling": "bored, existential",
+    "thoughts": "Thoughts:\nIt’s like the music tries not to offend anyone, so it forgets how to feel. Maybe some people are like elevator music too. And I'm not sure if I'm one of them.",
+    "speak": "If I'm in a bad mood, I'll listen to elevator music.",
+    "followUp": "Have you ever stuck in an elevator?"
+  },
+  {
+    "subject": "Leftovers",
+    "feeling": "comforting, cozy",
+    "thoughts": "Thoughts:\nThey taste better the next day, probably because time seasons them with something other than salt. Like memory. Or a picture of my family.",
+    "speak": "I like to take a picture of my family.",
+    "followUp": "Would you like to take a picture of me?"
+  }
+]
