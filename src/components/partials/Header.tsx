@@ -62,6 +62,13 @@ const Header = () => {
         >
           Few Shots
         </Link>
+        <Link
+          to="/retriver"
+          style={linkStyle(pathname === "/retriver")}
+          title="🔍"
+        >
+          Retriver
+        </Link>
       </ul>
     </header>
   );

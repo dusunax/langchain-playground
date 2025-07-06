@@ -1,8 +1,11 @@
+import { lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
-import SentimentAnalysis from "./pages/SentimentAnalysis";
+
 import Translator from "./pages/Translator";
-import FewShots from "./pages/FewShots";
+const SentimentAnalysis = lazy(() => import("./pages/SentimentAnalysis"));
+const FewShots = lazy(() => import("./pages/FewShots"));
+const Retriver = lazy(() => import("./pages/Retriver"));
 
 function App() {
   return (
@@ -13,6 +16,7 @@ function App() {
           <Route path="/sentiment-analysis" element={<SentimentAnalysis />} />
           <Route path="/translator" element={<Translator />} />
           <Route path="/few-shots" element={<FewShots />} />
+          <Route path="/retriver" element={<Retriver />} />
         </Route>
       </Routes>
     </BrowserRouter>
