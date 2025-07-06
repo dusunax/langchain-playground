@@ -38,10 +38,11 @@ export default function useLangChain() {
   Question: {question}
 
   Behavior:
-  - Only answer based on the given context.
-  - And if you don't know the answer, just say "I'm sorry, I cannot provide information about the question based on the given context.".
-  - If there are multiple meanings, explain each one briefly.
-  `;
+  - ONLY answer if the context contains sufficient, relevant information.
+  - If the answer is uncertain or cannot be directly answered from the context, say:
+    "I'm sorry, I cannot provide information about the question based on the given context."
+  - If there are multiple possible interpretations from the context, explain each one briefly and neutrally.
+`;
 
   const isAnswerValid = useCallback(
     (answer: string) => !answer.includes("I'm sorry"),
