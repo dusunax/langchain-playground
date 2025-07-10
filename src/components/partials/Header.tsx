@@ -69,6 +69,13 @@ const Header = () => {
         >
           Retriver
         </Link>
+        <Link
+          to="/stt-and-tts"
+          style={linkStyle(pathname === "/stt-and-tts")}
+          title="🔊"
+        >
+          STT And TTS
+        </Link>
       </ul>
     </header>
   );
