@@ -48,8 +48,16 @@ User: {text}
   };
 
   const startListening = () => {
-    recognitionRef.start();
-    setListening(true);
+    try {
+      recognitionRef.start();
+      setListening(true);
+    } catch (err: any) {
+      if (err.name === "InvalidStateError") {
+        console.warn("이미 음성 인식이 실행 중입니다.");
+      } else {
+        console.error("STT 시작 실패:", err);
+      }
+    }
   };
 
   const stopListening = () => {
