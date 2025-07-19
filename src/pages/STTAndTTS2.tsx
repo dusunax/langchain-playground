@@ -1,9 +1,17 @@
 import ContentsArea from "../components/ContentsArea";
-import useLangChain from "../hooks/stt-and-tts/useLangChain";
+import useLangChain2 from "../hooks/stt-and-tts/useLangChain2";
 
 export default function STTAndTTS() {
-  const { answer, loading, text, listening, startListening, stopListening } =
-    useLangChain();
+  const {
+    textOutput,
+    isTextOutputRequesting,
+    input,
+    isAudioListening,
+    startListening,
+    stopListening,
+    setAudioFile,
+    downloadAudio,
+  } = useLangChain2();
 
   return (
     <ContentsArea>
@@ -17,7 +25,7 @@ export default function STTAndTTS() {
         }}
       >
         <button
-          onClick={listening ? stopListening : startListening}
+          onClick={isAudioListening ? stopListening : startListening}
           style={{
             display: "flex",
             alignItems: "center",
@@ -30,9 +38,9 @@ export default function STTAndTTS() {
             style={{
               width: "10px",
               height: "10px",
-              background: listening ? "red" : "grey",
+              background: isAudioListening ? "red" : "grey",
               borderRadius: "50%",
-              animation: listening ? "ping 1s infinite" : "none",
+              animation: isAudioListening ? "ping 1s infinite" : "none",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -40,10 +48,10 @@ export default function STTAndTTS() {
               fontSize: "10px",
             }}
           ></div>
-          {listening ? (
+          {isAudioListening ? (
             <span
               style={{
-                animation: listening ? "pulse 1s infinite" : "none",
+                animation: isAudioListening ? "pulse 1s infinite" : "none",
                 animationDirection: "alternate",
               }}
             >
@@ -76,13 +84,25 @@ export default function STTAndTTS() {
           }}
         >
           <h2>Ask</h2>
-          <h3 style={{ height: "40px", overflow: "auto" }}>{text}</h3>
+          <h3 style={{ height: "40px", overflow: "auto" }}>{input}</h3>
           <h2>Answer</h2>
           <h3 style={{ minHeight: "100px" }}>
-            {answer}
-            {loading && <p style={{ color: "grey" }}>Loading...</p>}
+            {textOutput}
+            {isTextOutputRequesting && (
+              <p style={{ color: "grey" }}>Loading...</p>
+            )}
           </h3>
         </aside>
+      </section>
+
+      <section className="testing-audio-upload">
+        <h2>테스트용 오디오 파일 업로드</h2>
+        <input
+          type="file"
+          accept="audio/*"
+          onChange={(e) => setAudioFile(e.target.files?.[0] || null)}
+        />
+        <button onClick={downloadAudio}>다운로드</button>
       </section>
     </ContentsArea>
   );

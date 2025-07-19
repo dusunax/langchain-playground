@@ -76,6 +76,13 @@ const Header = () => {
         >
           STT And TTS
         </Link>
+        <Link
+          to="/stt-and-tts-v2"
+          style={linkStyle(pathname === "/stt-and-tts-v2")}
+          title="🔊"
+        >
+          STT And TTS v2
+        </Link>
       </ul>
     </header>
   );

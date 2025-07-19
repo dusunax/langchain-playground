@@ -27,7 +27,7 @@ const GPT_VOICES = [
   "shimmer",
 ];
 
-export default function useLangChainWithGPT4o() {
+export default function useLangChain2() {
   const [isAudioListening, setIsAudioListening] = useState(false);
   const [isTextOutputRequesting, setIsTextOutputRequesting] =
     useState<boolean>(false);
